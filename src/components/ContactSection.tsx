@@ -1,3 +1,4 @@
+
 'use client';
 
 const ContactSection = () => {
@@ -7,25 +8,27 @@ const ContactSection = () => {
         <div className="max-w-2xl mx-auto text-center">
           {/* Section Number */}
           <p className="numbered-section mono text-teal text-base mb-4">
-            What&apos;s Next?
+            What's Next?
           </p>
 
           {/* Section Title */}
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-200 mb-8">
-          viska barca viska catalonia
+            Let's Build Something That Converts
           </h2>
 
           {/* Description */}
           <p className="text-lg text-slate-400 leading-relaxed mb-12 max-w-lg mx-auto">
-          djqdqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+            Got a business challenge that needs solving? Ready to turn your digital presence 
+            into a revenue engine? I'm currently available for new projects and would love to 
+            discuss how we can grow your business together.
           </p>
 
           {/* CTA Button */}
           <a
-            href="mailto:brittany.chiang@gmail.com"
+            href="mailto:chedibaaka.pro@gmail.com"
             className="btn-outline inline-block text-lg px-8 py-4"
           >
-            Say Hello
+            Start the Conversation
           </a>
         </div>
       </div>

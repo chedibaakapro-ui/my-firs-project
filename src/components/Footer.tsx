@@ -1,14 +1,14 @@
 'use client';
 
-import { Github, Instagram, Twitter, Linkedin, Code, Star, GitFork } from 'lucide-react';
+import { Github, Instagram, Twitter, Linkedin, Code } from 'lucide-react';
 
 const Footer = () => {
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/bchiang7', label: 'GitHub' },
-    { icon: Instagram, href: 'https://www.instagram.com/bchiang7', label: 'Instagram' },
-    { icon: Twitter, href: 'https://twitter.com/bchiang7', label: 'Twitter' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/bchiang7', label: 'LinkedIn' },
-    { icon: Code, href: 'https://codepen.io/bchiang7', label: 'CodePen' },
+    { icon: Github, href: 'https://github.com/chedibaaka', label: 'GitHub' },
+    { icon: Instagram, href: 'https://www.instagram.com/chedibaaka', label: 'Instagram' },
+    { icon: Twitter, href: 'https://twitter.com/chedibaaka', label: 'Twitter' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/chedibaaka', label: 'LinkedIn' },
+    { icon: Code, href: 'https://codepen.io/chedibaaka', label: 'CodePen' },
   ];
 
   return (
@@ -35,22 +35,9 @@ const Footer = () => {
 
         {/* Attribution */}
         <div className="text-center">
-          <a
-            href="https://github.com/bchiang7/v4"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-slate-400 hover:text-teal transition-colors duration-300 mono text-sm"
-          >
-            <span>Designed & Built by Brittany Chiang</span>
-            <div className="flex items-center gap-1">
-              <Star size={14} />
-              <span>8,063</span>
-            </div>
-            <div className="flex items-center gap-1">
-              <GitFork size={14} />
-              <span>4,145</span>
-            </div>
-          </a>
+          <p className="text-slate-400 mono text-sm">
+            Built by Chedi Baaka
+          </p>
         </div>
       </div>
     </footer>

@@ -34,7 +34,7 @@ const Header = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center group">
           <div className="w-12 h-12 border-2 border-teal rounded transform rotate-45 flex items-center justify-center group-hover:border-teal-300 transition-colors duration-300">
-            <span className="text-teal text-xl font-bold transform -rotate-45 mono">B</span>
+            <span className="text-teal text-xl font-bold transform -rotate-45 mono">C</span>
           </div>
         </Link>
 
@@ -55,12 +55,10 @@ const Header = () => {
 
           {/* Resume Button */}
           <a
-            href="/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:chedibaaka.pro@gmail.com"
             className="btn-outline ml-4"
           >
-            Resume
+            Hire Me
           </a>
         </div>
 

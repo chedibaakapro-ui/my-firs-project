@@ -4,12 +4,12 @@ import { useEffect, useState } from 'react';
 
 const AboutSection = () => {
   const technologies = [
-    'JavaScript (ES6+)',
+    'React & Next.js',
     'TypeScript',
-    'React',
-    'Eleventy',
     'Node.js',
-    'WordPress'
+    'PostgreSQL',
+    'AWS/Vercel',
+    'Stripe Integration'
   ];
 
   return (
@@ -27,42 +27,30 @@ const AboutSection = () => {
           {/* Content */}
           <div className="md:col-span-2 space-y-6">
             <p className="text-slate-400 leading-relaxed">
-              Hello! My name is Brittany and I enjoy creating things that live on the internet.
-              My interest in web development started back in 2012 when I decided to try editing
-              custom Tumblr themes — turns out hacking together a custom reblog button taught
-              me a lot about HTML & CSS!
+              <strong className="text-slate-300">Your last developer promised the moon and delivered a crater.</strong> I get it. 
+              You need someone who understands that every line of code should drive business results, not just win design awards.
             </p>
 
             <p className="text-slate-400 leading-relaxed">
-              Fast-forward to today, and I've had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/" className="text-teal hover:text-teal-300 transition-colors duration-300">
-                an advertising agency
-              </a>, {' '}
-              <a href="https://starry.com/" className="text-teal hover:text-teal-300 transition-colors duration-300">
-                a start-up
-              </a>, {' '}
-              <a href="https://www.apple.com/" className="text-teal hover:text-teal-300 transition-colors duration-300">
-                a huge corporation
-              </a>, and {' '}
-              <a href="https://scout.camd.northeastern.edu/" className="text-teal hover:text-teal-300 transition-colors duration-300">
-                a student-led design studio
-              </a>. My main focus these days is building accessible,
-              inclusive products and digital experiences at{' '}
-              <a href="https://upstatement.com/" className="text-teal hover:text-teal-300 transition-colors duration-300">
-                Upstatement
-              </a> for a variety of clients.
+              I've spent 5+ years turning underperforming websites into revenue machines for startups and scale-ups. 
+              While other developers focus on making things "pretty," I focus on making things <span className="text-teal">profitable</span>. 
+              My applications don't just load fast—they convert fast.
             </p>
 
             <p className="text-slate-400 leading-relaxed">
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app" className="text-teal hover:text-teal-300 transition-colors duration-300">
-                launched a course
-              </a> that covers everything you need to build a web app with the
-              Spotify API using Node & React.
+              Specializing in React/Next.js applications that actually solve business problems: 
+              customer dashboards that reduce churn, checkout flows that increase conversions, 
+              and integrations that save your team hours of manual work every week.
             </p>
 
             <p className="text-slate-400 leading-relaxed">
-              Here are a few technologies I've been working with recently:
+              <strong className="text-slate-300">Recent wins:</strong> Built a SaaS dashboard that reduced customer support tickets by 60%. 
+              Optimized an e-commerce checkout that increased conversion rates by 34%. 
+              Created a lead generation tool that captured 200% more qualified prospects.
+            </p>
+
+            <p className="text-slate-400 leading-relaxed">
+              Technologies I leverage to grow your business:
             </p>
 
             {/* Technologies List */}
@@ -76,7 +64,7 @@ const AboutSection = () => {
             </div>
           </div>
 
-          {/* Headshot */}
+          {/* Profile */}
           <div className="md:col-span-1">
             <div className="relative group max-w-80 mx-auto">
               {/* Image Container */}

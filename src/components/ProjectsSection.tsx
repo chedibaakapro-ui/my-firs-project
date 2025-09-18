@@ -5,69 +5,70 @@ import { ExternalLink, Github } from 'lucide-react';
 const ProjectsSection = () => {
   const featuredProjects = [
     {
-      title: 'HAHAHAHAAHAH',
-      description: 'Manager,.',
-      tech: ['VS Code', 'Sublime Text', 'Atom', 'iTerm2', 'Hyper'],
-      github: 'https://github.com/bchiang7/halcyon-site',
-      external: 'https://halcyon-theme.netlify.com/',
+      title: 'Revenue Analytics Dashboard',
+      description: 'A comprehensive analytics platform that helped a SaaS startup identify their highest-value customer segments. Built with Next.js and D3.js, it processes millions of data points in real-time. Result: 34% increase in customer lifetime value through targeted retention strategies.',
+      tech: ['Next.js', 'TypeScript', 'D3.js', 'PostgreSQL', 'Stripe API'],
+      github: 'https://github.com/chedibaaka',
+      external: 'https://chedibaaka.pro',
       image: '/api/placeholder/600/400'
     },
     {
-      title: 'Spotify Profile',
-      description: 'A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.',
-      tech: ['React', 'Styled Components', 'Express', 'Spotify API', 'Heroku'],
-      github: 'https://github.com/bchiang7/spotify-profile',
-      external: 'https://spotify-profile.herokuapp.com/',
+      title: 'E-commerce Conversion Optimizer',
+      description: 'Complete checkout flow redesign and optimization for an online retailer. Implemented smart form validation, progress indicators, and abandoned cart recovery. Features A/B testing framework and heat-map integration for continuous improvement.',
+      tech: ['React', 'Node.js', 'MongoDB', 'Stripe', 'SendGrid'],
+      github: 'https://github.com/chedibaaka',
+      external: 'https://chedibaaka.pro',
       image: '/api/placeholder/600/400'
     },
     {
-      title: 'Build a Spotify Connected App',
-      description: 'Having struggled with understanding how the Spotify OAuth flow works, I made the course I wish I could have had. Unlike tutorials that only cover a few concepts and leave you with half-baked GitHub repositories, this course covers everything from explaining the principles of REST APIs to implementing Spotify\'s OAuth flow and fetching API data in a React app.',
-      tech: ['React', 'Express', 'Spotify API', 'Styled Components'],
-      external: 'https://www.newline.co/courses/build-a-spotify-connected-app',
+      title: 'Lead Generation Automation',
+      description: 'Intelligent lead scoring and nurturing platform that qualifies prospects automatically. Integrates with HubSpot, processes form submissions, and triggers personalized email sequences. Increased qualified leads by 200% while reducing manual work by 75%.',
+      tech: ['React', 'Express', 'HubSpot API', 'AWS Lambda', 'Twilio'],
+      external: 'https://chedibaaka.pro',
       image: '/api/placeholder/600/400'
     }
   ];
 
   const otherProjects = [
     {
-      title: 'OTAKOOOO',
-      description: 'IV WATCH 655 ANIME!!!',
-      tech: ['Algolia', 'WordPress', 'PHP'],
-      external: 'https://medium.com/stories-from-upstatement/integrating-algolia-search-with-wordpress-multisite-e2dea3ed449c'
+      title: 'SaaS Customer Portal',
+      description: 'Self-service customer dashboard that reduced support tickets by 60%. Features billing management, usage analytics, and knowledge base integration.',
+      tech: ['Next.js', 'Prisma', 'Stripe', 'Intercom API'],
+      github: 'https://github.com/chedibaaka',
+      external: 'https://chedibaaka.pro'
     },
     {
-      title: 'Time to Have More Fun',
-      description: 'A single page web app for helping me choose where to travel, built CLAUDES',
-      tech: ['Next.js', 'Tailwind CSS', 'Firebase'],
-      github: 'https://github.com/bchiang7/time-to-have-more-fun',
-      external: 'https://time-to-have-more-fun.now.sh/'
+      title: 'Real Estate CRM',
+      description: 'Custom CRM for property management company handling 500+ properties. Automated tenant screening, lease management, and maintenance requests.',
+      tech: ['React', 'Node.js', 'PostgreSQL', 'AWS S3'],
+      github: 'https://github.com/chedibaaka',
+      external: 'https://chedibaaka.pro'
     },
     {
-      title: 'HAHAHAHAHAHAHAHAHA',
-      description: 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHt',
-      tech: ['Node', 'Express', 'Firebase', 'Vue'],
-      external: 'https://medium.com/stories-from-upstatement/building-a-headless-mobile-app-cms-from-scratch-bab2d17744d9'
+      title: 'Restaurant Ordering System',
+      description: 'Complete online ordering platform with real-time kitchen display, inventory management, and customer loyalty program integration.',
+      tech: ['Next.js', 'Socket.io', 'Stripe', 'Twilio'],
+      external: 'https://chedibaaka.pro'
     },
     {
-      title: 'OctoProfile',
-      description: 'A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.',
-      tech: ['Next.js', 'Chart.js', 'GitHub API'],
-      github: 'https://github.com/bchiang7/octoprofile',
-      external: 'https://octoprofile.now.sh'
+      title: 'Healthcare Appointment Scheduler',
+      description: 'HIPAA-compliant booking system with automated reminders, telehealth integration, and patient portal. Reduced no-shows by 45%.',
+      tech: ['React', 'Node.js', 'PostgreSQL', 'Zoom API'],
+      github: 'https://github.com/chedibaaka',
+      external: 'https://chedibaaka.pro'
     },
     {
-      title: 'Google Keep Clone',
-      description: 'A simple Google Keep clone built with Vue and Firebase.',
-      tech: ['Vue', 'Firebase'],
-      github: 'https://github.com/bchiang7/google-keep-vue-firebase',
-      external: 'https://keep-vue.netlify.com/'
+      title: 'Inventory Management Suite',
+      description: 'Multi-warehouse inventory system with predictive restocking, barcode scanning, and supplier integration for manufacturing company.',
+      tech: ['Vue.js', 'Laravel', 'MySQL', 'QuickBooks API'],
+      github: 'https://github.com/chedibaaka',
+      external: 'https://chedibaaka.pro'
     },
     {
-      title: 'Apple Music Embeddable Web Player Widget',
-      description: 'Embeddable web player widget for Apple Music that lets users log in and listen to full song playback in the browser leveraging MusicKit.js.',
-      tech: ['MusicKit.js', 'JS', 'SCSS'],
-      external: 'https://tools.applemusic.com/en-us'
+      title: 'Content Management Platform',
+      description: 'Headless CMS with drag-and-drop page builder, SEO optimization tools, and multi-site management for digital agencies.',
+      tech: ['React', 'GraphQL', 'MongoDB', 'AWS CDN'],
+      external: 'https://chedibaaka.pro'
     }
   ];
 
@@ -77,7 +78,7 @@ const ProjectsSection = () => {
         {/* Section Header */}
         <div className="flex items-center mb-16">
           <h2 className="numbered-section text-2xl md:text-3xl font-bold text-slate-200 whitespace-nowrap">
-            Some Things I&apos;ve Built
+            Solutions That Drive Growth
           </h2>
           <div className="ml-6 h-px bg-slate-700 flex-1 max-w-xs"></div>
         </div>
@@ -150,15 +151,17 @@ const ProjectsSection = () => {
         {/* Other Projects */}
         <div>
           <h3 className="text-2xl font-bold text-slate-200 text-center mb-12">
-            Other Noteworthy Projects
+            More Business Solutions
           </h3>
 
           <div className="text-center mb-12">
             <a
-              href="/archive"
+              href="https://github.com/chedibaaka"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-teal hover:text-teal-300 mono text-sm"
             >
-              view the archive
+              view more on GitHub
             </a>
           </div>
 
