@@ -1,0 +1,161 @@
+/* Import custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 39% 8%;
+    --foreground: 210 10% 74%;
+    --card: 224 32% 12%;
+    --card-foreground: 210 10% 74%;
+    --popover: 224 32% 12%;
+    --popover-foreground: 210 10% 74%;
+    --primary: 174 100% 70%;
+    --primary-foreground: 220 39% 8%;
+    --secondary: 224 32% 12%;
+    --secondary-foreground: 210 10% 74%;
+    --muted: 224 32% 12%;
+    --muted-foreground: 215 15% 57%;
+    --accent: 174 100% 70%;
+    --accent-foreground: 220 39% 8%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 10% 98%;
+    --border: 224 32% 17%;
+    --input: 224 32% 17%;
+    --ring: 174 100% 70%;
+    --chart-1: 174 100% 70%;
+    --chart-2: 210 40% 65%;
+    --chart-3: 195 50% 70%;
+    --chart-4: 160 60% 65%;
+    --chart-5: 145 70% 60%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-navy-900 text-slate-300 font-sans;
+    font-family: 'Inter', 'Calibre', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
+    line-height: 1.3;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-navy-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-600 rounded-md;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-500;
+  }
+
+  /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-slate-200 font-semibold;
+  }
+
+  h1 {
+    @apply text-clamp-4xl font-bold text-slate-200;
+  }
+
+  h2 {
+    @apply text-clamp-3xl font-bold text-slate-200;
+  }
+
+  h3 {
+    @apply text-clamp-2xl font-semibold text-slate-200;
+  }
+
+  p {
+    @apply text-slate-400;
+  }
+
+  a {
+    @apply text-teal hover:text-teal-300 transition-colors duration-300;
+  }
+
+  /* Monospace font for code/technical elements */
+  .mono {
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', 'Consolas', 'Courier New', monospace;
+  }
+
+  /* Section padding */
+  section {
+    @apply py-24 px-6 md:px-12 lg:px-24;
+  }
+
+  /* Container max width */
+  .container {
+    @apply mx-auto max-w-6xl;
+  }
+
+  /* Custom animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  /* Button hover effects */
+  .btn-outline {
+    @apply border border-teal text-teal px-6 py-3 rounded-md bg-transparent
+           hover:bg-teal hover:bg-opacity-10 transition-all duration-300;
+  }
+
+  /* Project card hover effects */
+  .project-card {
+    @apply bg-navy-800 bg-opacity-50 border border-navy-700 rounded-lg p-6
+           hover:transform hover:-translate-y-1 transition-all duration-300
+           hover:bg-opacity-70 hover:border-navy-600;
+  }
+
+  /* Social links styling */
+  .social-link {
+    @apply text-slate-400 hover:text-teal hover:-translate-y-1
+           transition-all duration-300 transform;
+  }
+
+  /* Navigation link styling */
+  .nav-link {
+    @apply text-slate-300 hover:text-teal transition-colors duration-300
+           mono text-sm font-normal;
+  }
+
+  /* Numbered list styling */
+  body {
+    counter-reset: section;
+  }
+
+  .numbered-section::before {
+    content: "0" counter(section) ".";
+    counter-increment: section;
+    @apply mono text-teal text-sm mr-2;
+  }
+}
