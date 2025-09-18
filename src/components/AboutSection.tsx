@@ -71,7 +71,7 @@ const AboutSection = () => {
               <div className="relative rounded-lg overflow-hidden">
                 <div className="aspect-square rounded-lg overflow-hidden border-2 border-teal">
   <img 
-    src="/images/profile.jpg" 
+    src="/images/aaa.jpg" 
     alt="Chedi Baaka" 
     className="w-full h-full object-cover"
   />
