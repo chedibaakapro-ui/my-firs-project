@@ -69,9 +69,13 @@ const AboutSection = () => {
             <div className="relative group max-w-80 mx-auto">
               {/* Image Container */}
               <div className="relative rounded-lg overflow-hidden">
-                <div className="aspect-square bg-teal bg-opacity-20 rounded-lg border-2 border-teal flex items-center justify-center">
-                  <span className="text-teal text-6xl">👤</span>
-                </div>
+                <div className="aspect-square rounded-lg overflow-hidden border-2 border-teal">
+  <img 
+    src="/images/profile.jpg" 
+    alt="Chedi Baaka" 
+    className="w-full h-full object-cover"
+  />
+</div>
 
                 {/* Hover overlay */}
                 <div className="absolute inset-0 bg-teal bg-opacity-30 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
