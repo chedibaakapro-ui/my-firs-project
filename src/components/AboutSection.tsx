@@ -12,60 +12,6 @@ const AboutSection = () => {
     'Stripe Integration'
   ];
 
-  // DEBUG_PFP_XYZ123: Add debugging for image loading
-  useEffect(() => {
-    console.log('DEBUG_PFP_XYZ123: AboutSection component mounted');
-    console.log('DEBUG_PFP_XYZ123: Expected image path: /image/profile-pic.jpg');
-    console.log('DEBUG_PFP_XYZ123: Current window location:', window.location.href);
-    
-    // Test multiple possible paths
-    const testPaths = [
-      '/image/profile-pic.jpg',
-      '/images/profile-pic.jpg', 
-      '/image/aaa.jpg',
-      '/images/aaa.jpg',
-      '/profile-pic.jpg',
-      '/image/profile-pic.png',
-      '/image/profile-pic.jpeg'
-    ];
-
-    console.log('DEBUG_PFP_XYZ123: Testing multiple paths...');
-    
-    testPaths.forEach((path, index) => {
-      const img = new Image();
-      img.onload = () => {
-        console.log(`DEBUG_PFP_XYZ123: ✅ FOUND WORKING PATH [${index}]: ${path}`);
-      };
-      img.onerror = () => {
-        console.log(`DEBUG_PFP_XYZ123: ❌ Failed path [${index}]: ${path}`);
-      };
-      img.src = path;
-    });
-
-    // Also try to fetch and see what we get
-    fetch('/image/profile-pic.jpg')
-      .then(response => {
-        console.log('DEBUG_PFP_XYZ123: Fetch response status:', response.status);
-        console.log('DEBUG_PFP_XYZ123: Fetch response headers:', response.headers);
-        return response.text();
-      })
-      .then(text => {
-        console.log('DEBUG_PFP_XYZ123: Fetch response body (first 200 chars):', text.substring(0, 200));
-      })
-      .catch(error => {
-        console.error('DEBUG_PFP_XYZ123: Fetch error:', error);
-      });
-  }, []);
-
-  const handleImageLoad = () => {
-    console.log('DEBUG_PFP_XYZ123: Image onLoad event fired successfully');
-  };
-
-  const handleImageError = (error: React.SyntheticEvent<HTMLImageElement, Event>) => {
-    console.error('DEBUG_PFP_XYZ123: Image onError event fired:', error);
-    console.log('DEBUG_PFP_XYZ123: Image src that failed:', (error.target as HTMLImageElement).src);
-  };
-
   return (
     <section id="about" className="py-24 px-6 md:px-12 lg:px-24">
       <div className="container">
@@ -125,11 +71,9 @@ const AboutSection = () => {
               <div className="relative rounded-lg overflow-hidden">
                 <div className="aspect-square rounded-lg overflow-hidden border-2 border-teal">
                   <img 
-                    src="/image/profile-pic.jpg"
+                    src="/image/photo-shot.png"
                     alt="Chedi Baaka" 
                     className="w-full h-full object-cover"
-                    onLoad={handleImageLoad}
-                    onError={handleImageError}
                   />
                 </div>
 
