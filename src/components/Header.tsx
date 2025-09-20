@@ -53,9 +53,11 @@ const Header = () => {
             </Link>
           ))}
 
-          {/* Resume Button */}
+          {/* Fixed Hire Me Button - Now links to Google Calendar */}
           <a
-            href="mailto:chedibaaka.pro@gmail.com"
+            href="https://calendar.app.google/CLSLRgvkLvPJnjc48"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-outline ml-4"
           >
             Hire Me
