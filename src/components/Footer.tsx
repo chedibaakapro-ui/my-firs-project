@@ -1,14 +1,15 @@
 'use client';
 
-import { Github, Instagram, Twitter, Linkedin, Code } from 'lucide-react';
+import { Github, Linkedin, Code } from 'lucide-react';
 
 const Footer = () => {
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/chedibaaka', label: 'GitHub' },
-    { icon: Instagram, href: 'https://www.instagram.com/chedibaaka', label: 'Instagram' },
-    { icon: Twitter, href: 'https://twitter.com/chedibaaka', label: 'Twitter' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/chedibaaka', label: 'LinkedIn' },
+    { icon: Github, href: 'https://github.com/chedibaakapro-ui', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/chedi-baaka-968178386/', label: 'LinkedIn' },
     { icon: Code, href: 'https://codepen.io/chedibaaka', label: 'CodePen' },
+    // Add these when you create Instagram/Twitter accounts:
+    // { icon: Instagram, href: 'https://www.instagram.com/your_username', label: 'Instagram' },
+    // { icon: Twitter, href: 'https://twitter.com/your_username', label: 'Twitter' },
   ];
 
   return (

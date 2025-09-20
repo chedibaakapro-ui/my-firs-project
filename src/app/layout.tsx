@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
 export const metadata: Metadata = {
   title: "Chedi Baaka - Full-Stack Developer | Turn Ideas Into Revenue-Driving Web Solutions", 
   description: "I help businesses transform their digital presence into profit-generating machines. Specializing in React, Next.js, and scalable web applications that actually convert visitors into customers.",

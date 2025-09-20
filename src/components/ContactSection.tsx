@@ -1,4 +1,3 @@
-
 'use client';
 
 const ContactSection = () => {
@@ -23,9 +22,11 @@ const ContactSection = () => {
             discuss how we can grow your business together.
           </p>
 
-          {/* CTA Button */}
+          {/* Updated CTA Button */}
           <a
-            href="mailto:chedibaaka.pro@gmail.com"
+            href="https://calendar.app.google/CLSLRgvkLvPJnjc48"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-outline inline-block text-lg px-8 py-4"
           >
             Start the Conversation
