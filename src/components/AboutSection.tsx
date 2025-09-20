@@ -1,7 +1,5 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-
 const AboutSection = () => {
   const technologies = [
     'React & Next.js',
@@ -71,7 +69,7 @@ const AboutSection = () => {
               <div className="relative rounded-lg overflow-hidden">
                 <div className="aspect-square rounded-lg overflow-hidden border-2 border-teal">
                   <img 
-                    src="/image/photo-shot.png"
+                    src="/image/photo-shot.jpg"
                     alt="Chedi Baaka" 
                     className="w-full h-full object-cover"
                   />
